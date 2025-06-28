@@ -1,0 +1,9 @@
+groups:
+  - name: FastAPIAlerts
+    rules:
+      - alert: FastAPIDown
+        expr: up{job="fastapi"} == 0
+        for: 5m
+        labels: {severity: "critical"}
+        annotations:
+          summary: "FastAPI service is down"

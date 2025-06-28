@@ -1,0 +1,17 @@
+{
+  "dashboard": {
+    "title": "FastAPI Service Dashboard",
+    "panels": [
+      {
+        "type": "graph",
+        "title": "Request Duration",
+        "targets": [
+          {
+            "expr": "http_request_duration_seconds_bucket",
+            "legendFormat": "{{le}}"
+          }
+        ]
+      }
+    ]
+  }
+}
