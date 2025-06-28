@@ -67,6 +67,10 @@ EXPOSE APIPORT
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "APIPORT"]
 ```
 
+### Application Images
+
+the application images are managed on amazon ECR(elastic container registry)
+
 ### ⚙️ Kubernetes Deployment
 
 - Deployment: resource limits, liveness/readiness probes, autoscaling (via HPA)
